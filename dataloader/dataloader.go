@@ -2,7 +2,7 @@ package dataloader
 
 import (
 	"context"
-	"ego/graph/model"
+	"gql-go-todo/graph/model"
 	"net/http"
 	"time"
 

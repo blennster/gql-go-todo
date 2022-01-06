@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"ego/graph/model"
+	"gql-go-todo/graph/model"
 )
 
 // UserLoaderConfig captures the config to create a new UserLoader

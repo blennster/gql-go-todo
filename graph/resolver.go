@@ -1,11 +1,11 @@
 package graph
 
-///o:generate go run ego gen
+///o:generate go run gql-go-todo gen
 
 //go:generate go run github.com/99designs/gqlgen
 
 import (
-	"ego/graph/generated"
+	"gql-go-todo/graph/generated"
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/samonzeweb/godb"

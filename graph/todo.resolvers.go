@@ -5,11 +5,11 @@ package graph
 
 import (
 	"context"
-	"ego/constants"
-	"ego/dataloader"
-	"ego/graph/generated"
-	"ego/graph/model"
 	"fmt"
+	"gql-go-todo/constants"
+	"gql-go-todo/dataloader"
+	"gql-go-todo/graph/generated"
+	"gql-go-todo/graph/model"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {

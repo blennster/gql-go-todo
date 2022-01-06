@@ -1,4 +1,4 @@
-module ego
+module gql-go-todo
 
 go 1.17
 

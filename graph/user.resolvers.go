@@ -5,8 +5,8 @@ package graph
 
 import (
 	"context"
-	"ego/graph/model"
 	"fmt"
+	"gql-go-todo/graph/model"
 )
 
 func (r *mutationResolver) CreateUser(ctx context.Context, input model.NewUser) (*model.User, error) {

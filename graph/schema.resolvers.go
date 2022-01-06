@@ -5,8 +5,8 @@ package graph
 
 import (
 	"context"
-	"ego/graph/generated"
 	"fmt"
+	"gql-go-todo/graph/generated"
 )
 
 func (r *mutationResolver) Hello(ctx context.Context, input string) (string, error) {

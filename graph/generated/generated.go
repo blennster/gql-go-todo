@@ -5,8 +5,8 @@ package generated
 import (
 	"bytes"
 	"context"
-	"ego/graph/model"
 	"errors"
+	"gql-go-todo/graph/model"
 	"strconv"
 	"sync"
 	"sync/atomic"
@@ -349,7 +349,7 @@ func (ec *executionContext) field_Mutation_createTodo_args(ctx context.Context, 
 	var arg0 model.NewTodo
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNNewTodo2egoᚋgraphᚋmodelᚐNewTodo(ctx, tmp)
+		arg0, err = ec.unmarshalNNewTodo2gqlᚑgoᚑtodoᚋgraphᚋmodelᚐNewTodo(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -364,7 +364,7 @@ func (ec *executionContext) field_Mutation_createUser_args(ctx context.Context, 
 	var arg0 model.NewUser
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNNewUser2egoᚋgraphᚋmodelᚐNewUser(ctx, tmp)
+		arg0, err = ec.unmarshalNNewUser2gqlᚑgoᚑtodoᚋgraphᚋmodelᚐNewUser(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -424,7 +424,7 @@ func (ec *executionContext) field_Query_todos_args(ctx context.Context, rawArgs 
 	var arg0 *model.TodoFilter
 	if tmp, ok := rawArgs["filter"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("filter"))
-		arg0, err = ec.unmarshalOTodoFilter2ᚖegoᚋgraphᚋmodelᚐTodoFilter(ctx, tmp)
+		arg0, err = ec.unmarshalOTodoFilter2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodoFilter(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -552,7 +552,7 @@ func (ec *executionContext) _Mutation_createTodo(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚖegoᚋgraphᚋmodelᚐTodo(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_toggleTodo(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -594,7 +594,7 @@ func (ec *executionContext) _Mutation_toggleTodo(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚖegoᚋgraphᚋmodelᚐTodo(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Mutation_createUser(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -636,7 +636,7 @@ func (ec *executionContext) _Mutation_createUser(ctx context.Context, field grap
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖegoᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_ping(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -713,7 +713,7 @@ func (ec *executionContext) _Query_todos(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]*model.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚕᚖegoᚋgraphᚋmodelᚐTodoᚄ(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚕᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodoᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query_users(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -748,7 +748,7 @@ func (ec *executionContext) _Query_users(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚕᚖegoᚋgraphᚋmodelᚐUserᚄ(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚕᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐUserᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _Query___type(ctx context.Context, field graphql.CollectedField) (ret graphql.Marshaler) {
@@ -959,7 +959,7 @@ func (ec *executionContext) _Todo_user(ctx context.Context, field graphql.Collec
 	}
 	res := resTmp.(*model.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖegoᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) _User_id(ctx context.Context, field graphql.CollectedField, obj *model.User) (ret graphql.Marshaler) {
@@ -2736,12 +2736,12 @@ func (ec *executionContext) marshalNID2string(ctx context.Context, sel ast.Selec
 	return res
 }
 
-func (ec *executionContext) unmarshalNNewTodo2egoᚋgraphᚋmodelᚐNewTodo(ctx context.Context, v interface{}) (model.NewTodo, error) {
+func (ec *executionContext) unmarshalNNewTodo2gqlᚑgoᚑtodoᚋgraphᚋmodelᚐNewTodo(ctx context.Context, v interface{}) (model.NewTodo, error) {
 	res, err := ec.unmarshalInputNewTodo(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalNNewUser2egoᚋgraphᚋmodelᚐNewUser(ctx context.Context, v interface{}) (model.NewUser, error) {
+func (ec *executionContext) unmarshalNNewUser2gqlᚑgoᚑtodoᚋgraphᚋmodelᚐNewUser(ctx context.Context, v interface{}) (model.NewUser, error) {
 	res, err := ec.unmarshalInputNewUser(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -2761,11 +2761,11 @@ func (ec *executionContext) marshalNString2string(ctx context.Context, sel ast.S
 	return res
 }
 
-func (ec *executionContext) marshalNTodo2egoᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v model.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2gqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v model.Todo) graphql.Marshaler {
 	return ec._Todo(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNTodo2ᚕᚖegoᚋgraphᚋmodelᚐTodoᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2ᚕᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodoᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.Todo) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -2789,7 +2789,7 @@ func (ec *executionContext) marshalNTodo2ᚕᚖegoᚋgraphᚋmodelᚐTodoᚄ(ctx
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNTodo2ᚖegoᚋgraphᚋmodelᚐTodo(ctx, sel, v[i])
+			ret[i] = ec.marshalNTodo2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodo(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -2809,7 +2809,7 @@ func (ec *executionContext) marshalNTodo2ᚕᚖegoᚋgraphᚋmodelᚐTodoᚄ(ctx
 	return ret
 }
 
-func (ec *executionContext) marshalNTodo2ᚖegoᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v *model.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodo(ctx context.Context, sel ast.SelectionSet, v *model.Todo) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -2819,11 +2819,11 @@ func (ec *executionContext) marshalNTodo2ᚖegoᚋgraphᚋmodelᚐTodo(ctx conte
 	return ec._Todo(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNUser2egoᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v model.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2gqlᚑgoᚑtodoᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v model.User) graphql.Marshaler {
 	return ec._User(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNUser2ᚕᚖegoᚋgraphᚋmodelᚐUserᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2ᚕᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐUserᚄ(ctx context.Context, sel ast.SelectionSet, v []*model.User) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -2847,7 +2847,7 @@ func (ec *executionContext) marshalNUser2ᚕᚖegoᚋgraphᚋmodelᚐUserᚄ(ctx
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNUser2ᚖegoᚋgraphᚋmodelᚐUser(ctx, sel, v[i])
+			ret[i] = ec.marshalNUser2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐUser(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -2867,7 +2867,7 @@ func (ec *executionContext) marshalNUser2ᚕᚖegoᚋgraphᚋmodelᚐUserᚄ(ctx
 	return ret
 }
 
-func (ec *executionContext) marshalNUser2ᚖegoᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐUser(ctx context.Context, sel ast.SelectionSet, v *model.User) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "must not be null")
@@ -3197,7 +3197,7 @@ func (ec *executionContext) marshalOString2ᚖstring(ctx context.Context, sel as
 	return graphql.MarshalString(*v)
 }
 
-func (ec *executionContext) unmarshalOTodoFilter2ᚖegoᚋgraphᚋmodelᚐTodoFilter(ctx context.Context, v interface{}) (*model.TodoFilter, error) {
+func (ec *executionContext) unmarshalOTodoFilter2ᚖgqlᚑgoᚑtodoᚋgraphᚋmodelᚐTodoFilter(ctx context.Context, v interface{}) (*model.TodoFilter, error) {
 	if v == nil {
 		return nil, nil
 	}

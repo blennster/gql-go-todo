@@ -1,9 +1,9 @@
 package main
 
 import (
-	"ego/dataloader"
-	"ego/graph"
 	"fmt"
+	"gql-go-todo/dataloader"
+	"gql-go-todo/graph"
 	"log"
 	"net/http"
 	"os"
