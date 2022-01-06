@@ -1,4 +1,4 @@
-module gql-go-todo
+module github.com/blennster/gql-go-todo
 
 go 1.17
 

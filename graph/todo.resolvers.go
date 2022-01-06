@@ -6,10 +6,11 @@ package graph
 import (
 	"context"
 	"fmt"
-	"gql-go-todo/constants"
-	"gql-go-todo/dataloader"
-	"gql-go-todo/graph/generated"
-	"gql-go-todo/graph/model"
+
+	"github.com/blennster/gql-go-todo/constants"
+	"github.com/blennster/gql-go-todo/dataloader"
+	"github.com/blennster/gql-go-todo/graph/generated"
+	"github.com/blennster/gql-go-todo/graph/model"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {

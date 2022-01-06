@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"gql-go-todo/graph/model"
+	"github.com/blennster/gql-go-todo/graph/model"
 )
 
 // UserLoaderConfig captures the config to create a new UserLoader

@@ -1,11 +1,11 @@
 package graph
 
-///o:generate go run gql-go-todo gen
+///o:generate go run github.com/blennster/gql-go-todo gen
 
 //go:generate go run github.com/99designs/gqlgen
 
 import (
-	"gql-go-todo/graph/generated"
+	"github.com/blennster/gql-go-todo/graph/generated"
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/samonzeweb/godb"

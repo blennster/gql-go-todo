@@ -2,9 +2,10 @@ package dataloader
 
 import (
 	"context"
-	"gql-go-todo/graph/model"
 	"net/http"
 	"time"
+
+	"github.com/blennster/gql-go-todo/graph/model"
 
 	"github.com/samonzeweb/godb"
 )

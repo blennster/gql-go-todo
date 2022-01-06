@@ -6,7 +6,8 @@ package graph
 import (
 	"context"
 	"fmt"
-	"gql-go-todo/graph/model"
+
+	"github.com/blennster/gql-go-todo/graph/model"
 )
 
 func (r *mutationResolver) CreateUser(ctx context.Context, input model.NewUser) (*model.User, error) {

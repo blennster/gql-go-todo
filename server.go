@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"gql-go-todo/dataloader"
-	"gql-go-todo/graph"
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/blennster/gql-go-todo/dataloader"
+	"github.com/blennster/gql-go-todo/graph"
 
 	"github.com/99designs/gqlgen/api"
 	"github.com/99designs/gqlgen/codegen/config"
