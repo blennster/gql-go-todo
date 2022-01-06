@@ -1,0 +1,27 @@
+
+extend type Query {
+  todos(filter: TodoFilter): [Todo!]!
+}
+
+extend type Mutation {
+  createTodo(input: NewTodo!): Todo!
+  toggleTodo(todoId: ID!): Todo!
+}
+
+type Todo {
+  id: ID!
+  text: String!
+  done: Boolean!
+  user: User!
+}
+
+input TodoFilter {
+    done: Boolean
+    userid: ID
+    todoid: ID
+}
+
+input NewTodo {
+  text: String!
+  userId: String!
+}
